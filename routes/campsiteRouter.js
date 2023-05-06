@@ -1,6 +1,5 @@
 const express = require('express');
 const Campsite = require('../models/campsite');
-
 const campsiteRouter = express.Router();
 
 campsiteRouter.route('/')
@@ -11,7 +10,7 @@ campsiteRouter.route('/')
         res.setHeader('Content-Type', 'application/json');
         res.json(campsites);
     })
-    .catch(err => next(err));
+    .catch(err => next(err)); 
 })
 .post((req, res, next) => {
     Campsite.create(req.body)
