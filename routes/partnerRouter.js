@@ -72,5 +72,5 @@ partnerRouter.route('/:partnerId')
     .catch(err => next(err));
 });
 
-module.exports = partnerRouter;
+module.exports = partnerRouter; 
 
