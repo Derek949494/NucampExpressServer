@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
     firstname: {
         type: String,
-        default: ''
+        default: '',
+        facebookId: String,
     },
     lastname: {
         type: String,
